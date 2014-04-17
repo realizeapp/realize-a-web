@@ -1,0 +1,695 @@
+/********************************************************************
+	Theme: Arrived - Coming Soon Page
+    Created: September 2013
+    Creator: Kevin Mckoy
+    Support: https://wrapbootstrap.com/user/realmckoy01
+
+
+Structure of CSS
+
+1. General Layout
+2. Header Section
+3. Newsletter Section
+4. Features Section
+5. Social Section
+6. Contact Section
+7. Company Section
+8. Locate Section
+
+*********************************************************************/
+
+
+/********************************************************************
+	1. GENERAL LAYOUT
+*********************************************************************/
+
+html {
+   background-color:#2BA5EB;
+}
+
+body {
+    position:relative;
+	font-family: 'Open Sans', Calibri, Arial, sans-serif;
+    font-weight:400;
+    color: #fff;
+    padding:0 0 0 0;
+    width:auto;
+    height:100%;
+    background-size: cover;
+    background-position:bottom;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-color:#0A1927;
+    background-image:url(../img/bg.jpg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+section {
+    padding: 70px 0;
+}
+
+.content-r {
+    text-align:center;
+}
+
+h1 {
+    word-spacing: 4px;
+    font-size: 58px;
+    font-weight:300;
+    text-align:center;
+    letter-spacing:normal;
+}
+
+h2 {
+    word-spacing: 4px;
+    font-size: 48px;
+    font-weight:300;
+    text-align:center;
+    letter-spacing:normal;
+}
+
+p {
+    font-family: open-sans, sans-serif;
+}
+
+::-webkit-input-placeholder {
+   color: white;
+    letter-spacing: 1px;
+	font-weight: 400;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+    letter-spacing: 1px;
+	font-weight: 400;
+}
+
+:-ms-input-placeholder {
+   color: white;
+    letter-spacing: 1px;
+	font-weight: 400;
+}
+
+input, .btn {
+    letter-spacing:1px;
+}
+
+.btn {
+    border-radius:0;
+}
+
+.clearfix:after
+{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
+
+.scrollup {
+    width:40px;
+    height:40px;
+    opacity:0.5;
+    position:fixed;
+    bottom:50px;
+    right:100px;
+    display:none;
+    background-image:url(../img/arrow-up.png);
+    background-size:contain;
+    text-indent:-9999px;
+}
+
+@keyframes fadein {
+    0% {opacity:0}
+    90% {opacity:0}
+    100% {opacity:1}
+}
+
+@-moz-keyframes fadein {
+    0% {opacity:0}
+    90% {opacity:0}
+    100% {opacity:1}
+}
+
+@-webkit-keyframes fadein {
+    0% {opacity:0}
+    90% {opacity:0}
+    100% {opacity:1}
+}
+
+@-o-keyframes fadein {
+    0% {opacity:0}
+    90% {opacity:0}
+    100% {opacity:1}
+}
+
+.error {
+    color:white;
+    display:none;
+    margin: 60px 0px 15px 0px;
+    padding-top:0px;
+    font-size:12pt;
+}
+
+.success {
+	display: none;
+	padding:10px;
+	color: #044406;
+	font-size:12px;
+	background-color: #B7FBB9;
+}
+
+.error img {
+	vertical-align:top;
+}
+
+
+/********************************************************************
+	2. Navbar Section
+*********************************************************************/
+
+nav.navbar{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 0px;
+    border: none;
+}
+
+nav.navbar-default a.navbar-brand{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+nav.navbar-default a.navbar-brand:hover{
+    color: #3498db;
+}
+
+nav.navbar-default .navbar-nav li a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+nav.navbar-default .navbar-nav li a:hover{
+    color: #3498db;
+}
+
+/********************************************************************
+	2. Header Section
+*********************************************************************/
+
+header, nav {
+    color: #fff;
+    width:100%;
+    min-height:400px;
+    height:100%;
+    padding:1em 0 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin:60px 0;
+    text-transform: uppercase;
+}
+
+header h3 {
+    font-size: 32px;
+    margin: 40px 0 140px;
+    font-weight:300;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+    -o-animation: fadein 1s;
+}
+
+header h5 {
+    font-weight:300;
+}
+
+header h5 a{
+    color:white;
+    text-decoration:none;
+}
+
+.header-left-text {
+    width:50%;
+    display:inline-block;
+    padding-left:10px;
+    float:left;
+    text-align:left;
+}
+
+.header-right-text {
+    width:50%;
+    display:inline-block;
+    padding-right:10px;
+    float:right;
+    text-align:right;
+}
+
+
+/********************************************************************
+	3. Newsletter Section
+*********************************************************************/
+
+#newsletter {
+    background-color:#34495e;
+}
+
+#newsletter h2 {
+    text-align:center;
+    text-transform: uppercase;
+    margin:0 0 1em 0;
+}
+
+#newsletter form {
+    min-height:50px;
+    text-align: center;
+}
+
+#newsletter form input {
+    color: #fff;
+    background: #3498db;
+    font-size: 16px;
+    padding: 15px 15px;
+    font-weight: bold;
+    text-align: left;
+    /*display:inline-block;*/
+    width:100%;
+    height:50px;
+    margin:10px 0;
+    /*float:left;*/
+    border:none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#newsletter form input:focus {
+    background-color:#2b7cb2;
+}
+
+#newsletter form button.btn {
+    color: #fff;
+    background: #3498db;
+    font-size: 16px;
+    padding: 16px 30px;
+    display:inline-block;
+    text-align: center;
+    float:left;
+    height:50px;
+    margin:10px 0;
+    width:100%;
+    border-radius:0;
+    border:1px solid #3498db;
+    text-transform:uppercase;
+    font-weight: bold;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#newsletter form button.btn:hover {
+    background: #2b7cb2;
+}
+
+#newsletter div.ie-placeholder {
+    text-align:left;
+    position: absolute;
+    top: 0;
+    padding-top: 15px;
+    z-index: 1;
+    left: 30px;
+}
+
+#mc-embedded-subscribe {
+    width:100%;
+}
+
+/********************************************************************
+	3. Survey Section
+*********************************************************************/
+
+#survey {
+    background-color:#2b7cb2;
+}
+
+#survey h2 {
+    text-align:center;
+    text-transform: uppercase;
+    margin:0 0 1em 0;
+}
+
+#survey-frame{
+    width: 500px;
+    height: 600px;
+}
+
+#survey a.btn {
+    color: #fff;
+    background: #34495e;
+    font-size: 16px;
+    padding: 16px 30px;
+    height:50px;
+    margin:0;
+    border-radius:0;
+    border:1px solid #34495e;
+    text-transform:uppercase;
+    font-weight: bold;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#survey a.btn:hover {
+    background: #11273d;
+}
+
+#survey .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#survey .uv-block{
+    background-color: #ffffff;
+}
+
+/********************************************************************
+	4. Features Section
+*********************************************************************/
+
+#features {
+    background-color:#34495e;
+}
+
+#features h2 {
+    text-transform: uppercase;
+    text-align:center;
+    margin:0 0 1em 0;
+}
+
+#features i {
+    font-size:64px;
+    color:white;
+}
+
+#features p {
+    margin-top:2em;
+}
+
+#features div.item {
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+#features div.item:hover {
+    transform:translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -o-transform: translateY(10px);
+}
+
+#features .subheader{
+    margin:2em 0 2em 0;
+    text-transform: uppercase;
+    text-align:center;
+}
+
+
+/********************************************************************
+	5. Social Section
+*********************************************************************/
+
+#social {
+    background-color:#3498db;
+}
+
+#social h2 {
+    text-transform: uppercase;
+    text-align:center;
+    margin:0 0 1em 0;
+}
+
+.social-icon-container {
+    text-align:center;
+    margin:0 auto;
+    padding:0;
+}
+
+.social-icon-container li {
+    margin:0;
+    padding:0 4% 10px;
+    display:inline-block;
+}
+
+.social-icon-container img {
+    width:64px;
+    height:auto;
+    -webkit-transition: all ease-out 0.2s;
+    -moz-transition: all ease-out 0.2s;
+    -o-transition: all ease-out 0.2s;
+    transition: all ease-out 0.2s;
+}
+
+.social-icon-container img:hover {
+    transform: translate(0px,-12px);
+    -ms-transform: translate(0px,-12px);
+    -webkit-transform: translate(0px,-12px);
+}
+
+/********************************************************************
+	8. About Us Section
+*********************************************************************/
+
+#about-us {
+    background-color:#34495e;
+}
+
+#about-us h2 {
+    text-transform: uppercase;
+    text-align:center;
+    margin:0 0 1em 0;
+}
+
+/********************************************************************
+	8. Locate Section
+*********************************************************************/
+
+#locate {
+    padding:0 0;
+}
+
+#locate .content-r {
+    padding:0;
+    max-width:none;
+    width: 100%;
+}
+
+#locate h2 {
+    text-transform: uppercase;
+    text-align:center;
+    margin:0 0 1em 0;
+}
+
+#locate-overlay {
+    position:relative;
+    background-color:rgba(52, 152, 219, 0.9);
+    margin: 0 auto;
+    max-width: none;
+    padding:0 10px;
+    text-align:center;
+    height:500px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#locate-overlay .div-1 {
+    padding:70px;
+}
+
+#Gmap {
+    position:absolute;
+    width:100%;
+    max-height:500px;
+    height:100%;
+}
+
+#view-map {
+    position:absolute;
+    opacity:0;
+}
+
+input.view-map-selector:checked ~ #locate-overlay {
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -o-transform: translateY(100%);
+
+}
+
+input.view-map-selector:checked ~ #view-address-btn {
+    display:block;
+}
+
+#locate label.btn {
+    color: #fff;
+    background: #2b7cb2;
+    font-size: 16px;
+    padding: 16px 30px;
+    font-weight: bold;
+    margin-top:2em;
+    border-radius:0;
+    border: 1px solid #2b7cb2;
+    cursor: pointer;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#locate label.btn:hover {
+    background: #3498db;
+}
+
+#view-address-btn {
+    position:absolute;
+    left: 50%;
+    width: 240px;
+    border-radius:0;
+    margin-left: -120px;
+    margin-top:1em;
+    display:none;
+}
+
+#view-address-btn label {
+    color: #fff;
+    background: #3498db;
+    font-size: 16px;
+    padding: 16px 30px;
+    width:100%;
+    font-weight: bold;
+    border: 1px solid #2b7cb2;
+    cursor: pointer;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#view-address-btn:hover label {
+    background: #2b7cb2;
+}
+
+
+/********************************************************************
+	9. Media Queries
+*********************************************************************/
+
+@media (max-width:686px) {
+
+	/* Countdown */
+	#countdown_dashboard {
+	    max-width:500px;
+	}
+
+	.dash {
+		width: 80px;
+		height: 90px;
+	    background-size:contain;
+	}
+
+	.dash .digit {
+		font-size: 35pt;
+		width: 40px;
+	}
+	/* End Countdown */
+
+}
+
+@media (max-width:536px) {
+
+	/* Countdown */
+	#countdown_dashboard {
+	    max-width:400px;
+	}
+
+	.dash {
+		width: 60px;
+		height: 70px;
+	    background-size:contain;
+	}
+
+	.dash .digit {
+		font-size: 25pt;
+		width: 30px;
+	}
+	/* End Countdown */
+
+}
+
+@media (max-width:436px) {
+
+	h1 {
+	    font-size:38px;
+	}
+
+	h2 {
+	    font-size:32px;
+	}
+
+	h3 {
+	    font-size:24px;
+	}
+
+	header h3 {
+	    margin-bottom:80px;
+	}
+
+	#company a {
+	    font-size:32px;
+	}
+
+	/* Countdown */
+	#countdown_dashboard {
+	    max-width:240px;
+	}
+
+	.dash {
+		margin-top:5px;
+	}
+	/* End Countdown */
+
+}
