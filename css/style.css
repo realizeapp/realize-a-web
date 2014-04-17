@@ -40,7 +40,7 @@ body {
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-color:#0A1927;
-    background-image:url(../img/bg.jpg);
+    background-image:url(../img/main7.jpg);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -189,10 +189,11 @@ nav.navbar{
 nav.navbar-default a.navbar-brand{
     color: #fff;
     text-transform: uppercase;
+    font-size: 30px;
 }
 
 nav.navbar-default a.navbar-brand:hover{
-    color: #3498db;
+    color: #34495e;
 }
 
 nav.navbar-default .navbar-nav li a{
@@ -201,7 +202,7 @@ nav.navbar-default .navbar-nav li a{
 }
 
 nav.navbar-default .navbar-nav li a:hover{
-    color: #3498db;
+    color: #34495e;
 }
 
 /********************************************************************
@@ -226,10 +227,6 @@ header h3 {
     font-size: 32px;
     margin: 40px 0 140px;
     font-weight:300;
-    animation: fadein 1s;
-    -moz-animation: fadein 1s;
-    -webkit-animation: fadein 1s;
-    -o-animation: fadein 1s;
 }
 
 header h5 {
@@ -261,10 +258,6 @@ header h5 a{
 /********************************************************************
 	3. Newsletter Section
 *********************************************************************/
-
-#newsletter {
-    background-color:#34495e;
-}
 
 #newsletter h2 {
     text-align:center;
@@ -340,7 +333,7 @@ header h5 a{
     left: 30px;
 }
 
-#mc-embedded-subscribe {
+#form1 {
     width:100%;
 }
 
@@ -397,13 +390,18 @@ header h5 a{
     background-color: #ffffff;
 }
 
+
+.odd{
+    background-color:#3498db;
+}
+
+.even{
+    background-color:#1E587F;
+}
+
 /********************************************************************
 	4. Features Section
 *********************************************************************/
-
-#features {
-    background-color:#34495e;
-}
 
 #features h2 {
     text-transform: uppercase;
@@ -445,10 +443,6 @@ header h5 a{
 	5. Social Section
 *********************************************************************/
 
-#social {
-    background-color:#3498db;
-}
-
 #social h2 {
     text-transform: uppercase;
     text-align:center;
@@ -485,10 +479,6 @@ header h5 a{
 /********************************************************************
 	8. About Us Section
 *********************************************************************/
-
-#about-us {
-    background-color:#34495e;
-}
 
 #about-us h2 {
     text-transform: uppercase;

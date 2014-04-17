@@ -16,6 +16,8 @@
         <!-- CSS Stylesheets -->
         <link rel="stylesheet" media="screen" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link href="css/structure.css" rel="stylesheet">
+        <link href="css/form.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     </head>
@@ -46,74 +48,81 @@
         <header>
 
             <div class="container content-r">
-                <h1 id="main-text">Overcome Anxiety Faster</h1>
-                <h3 id="second-text">Realize helps you find the right treatments for you in a fraction of the time</h3>
+                <h1 id="main-text">Take control of your anxiety</h1>
+                <h3 id="second-text">Realize uses the wisdom of the crowd to find the best solutions for you</h3>
 
             </div>
         </header>
         <!-- End Header -->
 
         <!-- Features Section -->
-        <section id="features">
+        <section id="features" class="odd">
             <div class="container content-r">
 
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-lg-6 item">
-                        <i class="icon-time"></i>
-                        <p> <b>Overcome anxiety faster.</b> There are hundreds of anxiety remedies. Which ones will work for you?  You could spend hours searching forums and months trying suggestions.  Or you can spend five minutes answering a few questions and linking your facebook or fitbit data.  We'll recommend which to try first based on what worked for others with similar data patterns.
+                    <div class="col-xs-12 col-sm-6 col-lg-4 item">
+                        <i class="icon-moon"></i>
+                        <h4>Fill out a survey in the evening</h4>
+                        <p>The survey will ask you a couple of questions about how your day went, and what strategies you tried to cope with anxiety.  Don't worry, we hate long surveys, too, so you don't have to fill out everything!</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-4 item">
+                        <i class="icon-gears"></i>
+                        <h4>We'll crunch the numbers</h4>
+                        <p>We will stay up all night analyzing your data, and everyone else's.  We will figure out which strategies worked, and which ones didn't.
                         </p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-6 item">
-                        <i class="icon-cloud"></i>
-                        <p> <b>Add data for faster insights.</b>  Pull in data from wearable devices such as fitbit and jawbone, to social networks like facebook and twitter.  The more you add, the better the recommendations we can make.
+                    <div class="col-xs-12 col-sm-6 col-lg-4 item">
+                        <i class="icon-sun"></i>
+                        <h4>Get personalized recommendations in the morning</h4>
+                        <p>We'll send you your anxiety score, your trend over time, and some strategies that might help you personally, based on your data and everyone else's.
                         </p>
                     </div>
                 </div>
-
             </div>
         </section>
         <!-- End Features Section -->
 
         <!-- Newsletter Section -->
-        <section id="newsletter">
+        <section id="newsletter" class="even">
             <div class="container content-r">
 
-                <h2>Sign up to Participate</h2>
+                <h2>Sign up</h2>
                 <!-- Newsletter Form -->
-                <form class="row validate mc-embedded-subscribe-form" role="form" method="post" name="mc-embedded-subscribe-form" action="http://realize.us3.list-manage.com/subscribe/post?u=5db758e5eaf20b6581799b718&amp;id=a9bfcff0a9" target="_blank" novalidate>
-                    <div class="col-lg-offset-3 col-lg-6">
-                        <!--[if lt IE 10]>
-                        <div class="ie-placeholder n-email">Email Address</div>
-                        <![endif]-->
-                        <input name="EMAIL" class="email" type="email" placeholder="Email Address" required/>
-                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_5db758e5eaf20b6581799b718_a9bfcff0a9" value=""></div>
-                    </div>
-                    <div class="col-lg-offset-3 col-lg-6">
-                        <!--[if lt IE 10]>
-                        <div class="ie-placeholder n-email">First Name</div>
-                        <![endif]-->
-                        <input name="name_first" class="name_first" type="text" placeholder="First Name" required/>
-                    </div>
-                    <div class="col-lg-offset-3 col-lg-6">
-                        <!--[if lt IE 10]>
-                        <div class="ie-placeholder n-email">Last Name</div>
-                        <![endif]-->
-                        <input name="name_last" class="name_last" type="text" placeholder="Last Name" required/>
-                    </div>
-                    <div class="col-lg-offset-3 col-lg-6">
-                        <button id="mc-embedded-subscribe" class="btn" type="submit" name="submit" value="SUBSCRIBE ME">
-                        	SUBSCRIBE ME
-                        </button>
-                        <div id="mce-responses" class="clear">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>
-                    </div>
 
+                <form id="form1" name="form1" class="row validate wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+                      action="https://realizeapp.wufoo.com/forms/z1ovphx21yqe14c/#public">
+
+                    <div class="col-lg-offset-3 col-lg-6">
+                        <span>
+                            <!--[if lt IE 10]>
+                                <div class="ie-placeholder n-email">First Name</div>
+                            <![endif]-->
+                            <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="20" tabindex="1" placeholder="First Name" required />
+                        </span>
+                    </div>
+                    <div class="col-lg-offset-3 col-lg-6">
+                        <span>
+                            <!--[if lt IE 10]>
+                                <div class="ie-placeholder n-email">Last Name</div>
+                            <![endif]-->
+                            <input id="Field2" name="Field2" type="text" class="field text ln" value="" size="20" tabindex="2" placeholder="Last Name" required />
+                        </span>
+                    </div>
+                    <div class="col-lg-offset-3 col-lg-6">
+                        <!--[if lt IE 10]>
+                            <div class="ie-placeholder n-email">Email Address</div>
+                        <![endif]-->
+                        <input id="Field3" name="Field3" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="3" placeholder="Email Address" required />
+                    </div>
+                    <div class="col-lg-offset-3 col-lg-6">
+                        <button id="saveForm" name="saveForm" class="btTxt submit btn" type="submit" value="SIGN ME UP">SIGN ME UP</button>
+                    </div>
+                    <div class="hide">
+                        <label for="comment">Do Not Fill This Out</label>
+                        <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                        <input type="hidden" id="idstamp" name="idstamp" value="aKSmv4UOTxUDFB3yZNfPyuVssKtCdmFdI6SMpKWTidw=" />
+                    </div>
                 </form>
-                <!-- End Newsletter Form -->
-
             </div>
         </section>
 
@@ -121,10 +130,10 @@
         <!-- End Newsletter Section -->
 
         <!-- End About Section -->
-        <section id="social">
+        <section id="social" class="odd">
             <div class="container content-r">
 
-                <h2>CONNECT WITH US</h2>
+                <h2>CONNECT</h2>
 
                 <!-- Social Icons -->
                 <ul class="social-icon-container">
@@ -202,12 +211,11 @@
             </div>
         </section>
 
-        <section id="about-us">
+        <section id="about-us" class="even">
             <div class="container content-r">
-                <h2>LEARN ABOUT US</h2>
-                    <p><b>Hi!  We are <a href="https://twitter.com/a_laughlin">Adam</a> and <a href="https://twitter.com/vikparuchuri">Vik</a>.</b>  We're both frustrated by the time it takes from first trying to resolve anxieties, to finding the solutions that ultimately overcome it.</p>
-                    <p>We're both committed to doing something about that.</p>
-                    <p>Feel free to reach out if you want to talk about Realize, anxiety, self data mining, ninjas, or anything else.</p>
+                <h2>ABOUT US</h2>
+                    <p><b>Hi!  We are <a href="https://twitter.com/a_laughlin">Adam</a> and <a href="https://twitter.com/vikparuchuri">Vik</a>.  We both believe in giving people the tools to reshape their lives.</b>
+                    <p>We ultimately imagine a world where everyone intimately understands their health, and how to improve it.  We believe in privacy and data security.  Check out <a href="privacy.html" target="_blank">our policy</a> for more information.  Feel free to reach out if you want to talk about Realize, anxiety, quantified self, ninjas, or anything else.</p>
             </div>
         </section>
 
@@ -218,7 +226,9 @@
         <!-- Javascript -->
         <script src="js/jquery.1.10.1.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript" ></script>
-        <script src="js/mailchimp.js" type="text/javascript" ></script>
+        <script src="scripts/wufoo.js"></script>
+        <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
         <!-- End Javascripts -->
     </body>
 
