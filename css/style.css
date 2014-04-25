@@ -487,122 +487,16 @@ header h5 a{
 }
 
 /********************************************************************
-	8. Locate Section
+	8. Science Section
 *********************************************************************/
 
-#locate {
-    padding:0 0;
+#the-science a {
+    color: #1E587F;
 }
 
-#locate .content-r {
-    padding:0;
-    max-width:none;
-    width: 100%;
+#the-science a:hover{
+    color: #2b7cb2;
 }
-
-#locate h2 {
-    text-transform: uppercase;
-    text-align:center;
-    margin:0 0 1em 0;
-}
-
-#locate-overlay {
-    position:relative;
-    background-color:rgba(52, 152, 219, 0.9);
-    margin: 0 auto;
-    max-width: none;
-    padding:0 10px;
-    text-align:center;
-    height:500px;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-}
-
-#locate-overlay .div-1 {
-    padding:70px;
-}
-
-#Gmap {
-    position:absolute;
-    width:100%;
-    max-height:500px;
-    height:100%;
-}
-
-#view-map {
-    position:absolute;
-    opacity:0;
-}
-
-input.view-map-selector:checked ~ #locate-overlay {
-    transform: translateY(100%);
-    -webkit-transform: translateY(100%);
-    -moz-transform: translateY(100%);
-    -o-transform: translateY(100%);
-
-}
-
-input.view-map-selector:checked ~ #view-address-btn {
-    display:block;
-}
-
-#locate label.btn {
-    color: #fff;
-    background: #2b7cb2;
-    font-size: 16px;
-    padding: 16px 30px;
-    font-weight: bold;
-    margin-top:2em;
-    border-radius:0;
-    border: 1px solid #2b7cb2;
-    cursor: pointer;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-}
-
-#locate label.btn:hover {
-    background: #3498db;
-}
-
-#view-address-btn {
-    position:absolute;
-    left: 50%;
-    width: 240px;
-    border-radius:0;
-    margin-left: -120px;
-    margin-top:1em;
-    display:none;
-}
-
-#view-address-btn label {
-    color: #fff;
-    background: #3498db;
-    font-size: 16px;
-    padding: 16px 30px;
-    width:100%;
-    font-weight: bold;
-    border: 1px solid #2b7cb2;
-    cursor: pointer;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-}
-
-#view-address-btn:hover label {
-    background: #2b7cb2;
-}
-
 
 /********************************************************************
 	9. Media Queries
